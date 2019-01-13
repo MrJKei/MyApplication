@@ -42,14 +42,7 @@ public class MainActivity extends AppCompatActivity {
                     AlertDialog.Builder dialog = new AlertDialog.Builder(this   );
                     dialog.setTitle("DONE");
 
-                    dialog.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-
-                        }
-                    });
-
-                    dialog.show();
+                    Toast.makeText(MainActivity.this , "DONE" , Toast.LENGTH_SHORT).show();
 
                 } catch (Exception e) {
 
@@ -62,7 +55,10 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.delete_students:
 
-                controller.delete_students(firstname.getText().toString());
+
+                    controller.delete_students(firstname.getText().toString());
+
+
 
                 break;
 
